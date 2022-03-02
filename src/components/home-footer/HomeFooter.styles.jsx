@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const HomeFooterContainer = styled.div`
+    height: 94px;
     background-color: #f2f2f2; 
 `;
 
 export const HomeFooterTop = styled.div`
-    height: 48px;
     display: flex;
     align-items: center;
-
+    padding: 15px 0;
     p{
       padding-left: 30px;  
       font-size: 15px;
@@ -16,12 +16,13 @@ export const HomeFooterTop = styled.div`
     }
 `;
 export const HomeFooterBottom = styled.div`
-    height: 45px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;  
     font-size: 14px;
-
+    margin-top: 12px;
+    padding-left: 15px;  
+    
     a{
         padding: 15px 15px;
     }  

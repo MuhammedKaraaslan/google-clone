@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 import { Search } from '@mui/icons-material';
+import CustomButton from '../custom-button/CustomButton';
 
-export const SearchBarContainer = styled.div`
+export const SearchBarContainer = styled.form``;
+
+export const SearchBarInputFields = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     width: 582px;
@@ -25,7 +29,17 @@ export const SearchBarContainer = styled.div`
     }
 `;
 
+export const SearchBarButtons = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+
 export const SearchIconContainer = styled(Search)`
     max-width: 20px;
     max-height: 20px;
+`;
+
+
+export const HiddenButton = styled(CustomButton)`
+    display: none !important;
 `;

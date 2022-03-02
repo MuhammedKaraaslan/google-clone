@@ -11,8 +11,3 @@ export const HomeBodyContainer = styled.div`
         padding-bottom: 20px;
     }
 `;
-export const ButtonsContainer = styled.div`
-    display: flex;
-    padding-top: 18px;
-    padding-bottom: 52px;
-`;
