@@ -9,7 +9,7 @@ export const SearchBarInputFields = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: #70757a;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     width: 582px;

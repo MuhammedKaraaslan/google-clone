@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import './App.stlyes.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { AppContainer, AppBody } from './App.stlyes.jsx';
 
 import Home from './pages/home/HomePage';
 import SearchPage from './pages/search/SearchPage';
+
 
 
 function App() {

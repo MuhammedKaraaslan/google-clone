@@ -1,14 +1,18 @@
 import React from 'react'
 
-import { HomeHeaderContainer } from './HomeHeader.styles'
+import { Link } from 'react-router-dom'
 
-import CustomHeaderRight from '../custom-header-right/CustomHeaderRight'
-
+import { AppsContainer, AvatarContainer, HeaderRight, HomeHeaderContainer } from './HomeHeader.styles'
 
 function HomeHeader() {
   return (
     <HomeHeaderContainer>
-        <CustomHeaderRight />
+        <HeaderRight>
+            <Link to='/gmail'>Gmail</Link>
+            <Link to='/images'>Images</Link>
+            <AppsContainer />
+            <AvatarContainer />
+        </HeaderRight>
     </HomeHeaderContainer>
   )
 }

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const HomeFooterContainer = styled.div`
-    height: 94px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
     background-color: #f2f2f2; 
 `;
 
@@ -22,6 +25,7 @@ export const HomeFooterBottom = styled.div`
     font-size: 14px;
     margin-top: 12px;
     padding-left: 15px;  
+    padding-bottom: 15px;
     
     a{
         padding: 15px 15px;

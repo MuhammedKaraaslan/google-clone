@@ -12,9 +12,11 @@ import { Mic } from '@mui/icons-material';
 import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
 
-function Searchbar({ hideButtons = false }) {
+function Searchbar(props) {
+    const { hideButtons = false, term } = props;
+    console.log(term)
 
-    const [{}, dispatch] = useStateValue();
+    const [{ }, dispatch] = useStateValue();
 
     const [input, setInput] = useState("");
     const navigate = useNavigate();
@@ -32,7 +34,7 @@ function Searchbar({ hideButtons = false }) {
         <SearchBarContainer>
             <SearchBarInputFields>
                 <SearchIconContainer />
-                <input value={input} onChange={event => setInput(event.target.value)} />
+                <input value={input ? input : term} onChange={event => setInput(event.target.value)} />
                 <Mic />
             </SearchBarInputFields>
             {!hideButtons ? (
