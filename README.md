@@ -2,8 +2,6 @@
 
 Google clone created with ReactJS and Context API.
 
-## [Click Here](https://mhmmd-google-clone.herokuapp.com/) to view the site
-
 ## Topics
 - ReactJS
 - Context API
